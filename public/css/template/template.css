@@ -1,0 +1,41 @@
+header{
+   position: fixed;
+  width: 100%;
+  height: 30px;
+  z-index: 500;
+}
+main{
+   padding-top: 30px;
+   /* margin-top: 40px; */
+}
+
+@media only screen and (max-width : 992px) {
+   header, main, footer {
+       padding-left: 0;
+   }
+}
+
+
+/*side-nav*/
+   /* background-color de todo el side-nav */
+   #sidenav-menu{
+      background-color: #394049;
+   }
+   /*background-color del carusel de imagenes*/
+   #nav-imgs{
+      background: -webkit-linear-gradient(-135deg, #c6c6c6, #c09f77);
+      background: -o-linear-gradient(-135deg, #c6c6c6, #c09f77);
+      background: -moz-linear-gradient(-135deg, #c6c6c6, #c09f77);
+      background: linear-gradient(-135deg, #c6c6c6, #c09f77);
+   }
+   #datos-usuario{
+      background-color: #152f4a;
+      padding: 14px 10px 14px 10px;
+      border-radius: 0px 0 40px 0;
+   }
+   #datos-usuario h6{
+      margin:0;
+      /* padding-top: 4px; */
+      color: #c6c6c6  ;
+      /* height: 20px !important; */
+   }  

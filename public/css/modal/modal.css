@@ -1,0 +1,69 @@
+/*--estructura
+--ligado a js/modal/modal.js
+
+--html:
+
+<div id="modal-nombre" class="modal">
+   <div class="modal-cerrar right-align">
+      <a href="#" class="btn-modal-cerrar"><i class="fas fa-window-close fa-lg"></i></a>
+   </div>
+   <div class="row">
+      <div id="modal-header" class="col s12 modal-nombre-header">
+         <p class="header-titulo header-folio"></p>
+         <p class="header-titulo">Observación - Nota</p>
+      </div>
+   </div>
+   <div id="modal-body" class="row modal-nombre-body">
+      <div style="width: 98%;" class="right-align">
+         <i style="color: #394049;" class="fas fa-sticky-note fa-2x"></i>
+      </div>
+      <div id="modal-contenido" class="row" style="margin-bottom:10px !important;">
+         <!--nombre o nota-->
+      </div>
+   </div>
+   <div id="modal-footer" class="modal-nombre-footer">
+      {{-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a> --}}
+   </div>
+</div>
+*/
+
+/*modal*/
+.modal{
+   width: 30% !important;
+   border: 10px solid #152f4a;
+   border-radius: 40px 0 20px 0; 
+   background-color: #152f4a;
+}
+/*modal-buscar*/
+.modal-buscar{
+   width: 20% !important;
+   top: 8.4% !important;
+   left: 78%;
+   border: 10px solid #152f4a;
+   border-radius: 15px 0px 15px 15px; 
+   background-color: #152f4a;
+}
+
+#modal-header{
+   background-color: #152f4a;
+}
+#modal-header .header-titulo{
+   color: #c09f77;
+   font-weight: bold;
+   margin: 5px 0 !important;
+   font-size: 20px !important;
+   text-align: center;
+}
+#modal-body{
+   background-color: #c6c6c6;
+}
+.modal .div-col-padding{
+   padding-left: 30px !important;
+}
+
+.btn-modal-cerrar i{
+   color: #d50000;
+}
+.btn-modal-cerrar i{
+   color: red;
+}

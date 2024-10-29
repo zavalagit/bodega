@@ -1,0 +1,28 @@
+/* *{ 
+   box-sizing: border-box !important;
+} */
+
+body { background: #394049; } 
+/* .panel{ background-color: #fff; } */
+
+.atras i,
+.adelante i{
+   color: #394049 !important;
+}
+.atras:hover i,
+.adelante:hover i{
+   color: #152f4a !important;
+}
+.carousel{
+   width: 96%;
+   height:93vh;
+   margin: auto;
+   background-color: #394049;
+}
+.carousel-item{
+   border-radius: 30px; 
+}     
+#panel-uno{
+   overflow-y: auto;
+   overflow-x: auto;
+}

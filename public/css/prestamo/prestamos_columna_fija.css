@@ -1,0 +1,37 @@
+/*Columna contador*/
+/*sticky-1*/
+#tabla-prestamos .sticky-1{
+   position: sticky;
+   left: 0;
+   width: 55px;
+}
+#tabla-prestamos tbody tr td .sticky-1{
+   background-color: #304049;
+}
+#tabla-prestamos thead tr th{
+   background-color: #304049;
+}
+/*Columna acción*/
+/*sticky-2*/
+#tabla-prestamos .sticky-2{
+   position: sticky;
+   left: 55px;
+   width: 110px;
+}
+#tabla-prestamos tbody tr .sticky-2{
+   background-color: #c09f77 !important;
+}
+/*Columna folio*/
+/*sticky-3*/
+#tabla-prestamos .sticky-3{
+   position: sticky;
+   left: 165px;
+   width: 160px;
+}
+#tabla-prestamos tbody tr .sticky-3{
+   background-color: #152f4a !important;
+}
+#tabla-prestamos tbody tr td.sticky-3{
+   color: #c6c6c6 !important;
+   width: 100px;
+}

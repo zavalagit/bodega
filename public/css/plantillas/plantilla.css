@@ -1,0 +1,15 @@
+.logo-fondo{
+    background: -webkit-linear-gradient(-135deg, #c6c6c6, #c09f77);
+    background: -o-linear-gradient(-135deg, #c6c6c6, #c09f77);
+    background: -moz-linear-gradient(-135deg, #c6c6c6, #c09f77);
+    background: linear-gradient(-135deg, #c6c6c6, #c09f77);
+}
+.barra-lateral{
+    background-color: #c6c6c6;
+}
+.barra-titulos{
+    background-color: #152f4a;
+}
+.vista-seccion{
+    background-color: #152f4a; 
+}

@@ -1,0 +1,28 @@
+/*=====
+   div card-html
+=====*/
+.card-html{
+   height: 60vh;
+}
+
+
+/*=====
+   imagen dentro del div 'card-html'
+   esta imagen es la tarjeta con datos
+=====*/
+.card-html img{
+   width: 65%;
+   border-radius: 20px;
+
+}
+
+/*=====
+   Boton dentro del div 'curriculum'
+   Se personalizo boton
+   Este boton lo que hace es mostar el curriculum vitae
+=====*/
+.curriculum a{
+   border-radius: 0;
+   background-color: rgba(255, 255, 255, 0);
+   border: 1px solid rgb(50, 162, 170);
+}

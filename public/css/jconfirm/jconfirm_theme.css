@@ -1,0 +1,37 @@
+.jconfirm.jconfirm-my-theme .jconfirm-bg{
+   /* background-color: rgba(192, 159, 119, 0.5); */
+   /* background-color: rgba(57, 64, 73, 0.8); */
+   background-color: rgba(21, 41, 74, 0.9);
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box{
+   /* background-color: rgba(21, 41, 74, 0.8); */
+   background-color: rgba(192, 159, 119, 0);
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-closeIcon{
+   background-color: tomato;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-title-c{
+   text-align: center;
+   margin-bottom: 10px;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-content{
+   /* color: #152f4a; */
+   color: #c09f77;
+   font-size: 18px;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons{
+   /* border-style: none; */
+   /* align-items: center; */
+   text-align: right;
+}
+.jconfirm.jconfirm-my-theme .jconfirm-box .jconfirm-buttons button{
+   /* background-color: rgba(255, 255, 255, 0); */
+   background-color: tomato;
+   /* color: #c09f77; */
+   font-weight: bold;
+   border-style: none !important;
+}
+
+.fa-exclamation-triangle{
+   color: tomato;
+}

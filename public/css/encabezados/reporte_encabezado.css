@@ -1,0 +1,19 @@
+table.table-encabezado{
+   /* margin-top: 1%; */
+   width: 80%;
+   /* border-collapse: collapse; */
+  /* border-radius: 0px 13px 0px 13px;
+  overflow: hidden; */
+}
+.table-encabezado th{
+   background-color: #394049;
+   color: white; 
+}
+.table-encabezado td{
+   background-color: #c6c6c6;
+   color: black   ;
+}
+.table-encabezado th, .table-encabezado td{
+   border: 2px solid white;
+   font-size: 7px !important;
+}

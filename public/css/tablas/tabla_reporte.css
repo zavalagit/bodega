@@ -1,0 +1,14 @@
+table thead{
+   background-color: #394049;
+   color: white;
+}
+th{
+   border: 0.8px solid #aaa;
+   padding: 1px 1px 1px 1px;
+   font-size: 10px !important;
+}
+td{
+   border: 0.8px solid #aaa;
+   padding: 1px 1px 1px 1px;
+   font-size: 9px !important;
+}

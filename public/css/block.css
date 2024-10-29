@@ -1,0 +1,14 @@
+blockquote{
+   padding: 2px 0 !important;
+   color: #c09f77 !important;
+   background-color: #152f4a !important;
+   border-left: 9px solid #c09f77 !important;
+   /* font-size: 10px !important; */
+   /* border-radius: 0px 8px 20px 0; */
+   padding-left: 10px !important;
+}
+
+/* 
+   Nota: 
+      *Debe estar en un h6
+*/

@@ -1,0 +1,19 @@
+{{-- ELIMINAR-ARCHIVO --}}
+<!--recibidas-->
+<td>{{$recibidas->where('solicitud_id',$solicitud->id)->count()}}</td>
+<!--atendidas-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->count()}}</td>
+<!--pendientes-->
+<td>{{$pendientes->where('solicitud_id',$solicitud->id)->count()}}</td>
+<!--dictamen-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->where('documento_emitido','dictamen')->count()}}</td>
+<!--certificado-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->where('documento_emitido','certificado')->count()}}</td>
+<!--informe-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->where('documento_emitido','informe')->count()}}</td>
+<!--juzgado-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->where('documento_emitido','salida_juzgado')->count()}}</td>
+<!--archivo-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->where('documento_emitido','archivo')->count()}}</td>
+<!--estudios-->
+<td>{{$atendidas->where('solicitud_id',$solicitud->id)->sum('cantidad_estudios')}}</td>

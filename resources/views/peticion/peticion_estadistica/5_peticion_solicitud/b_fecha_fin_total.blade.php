@@ -1,0 +1,86 @@
+{{-- ELIMINAR-ARCHIVO --}}
+<td>{{$especialidad->solicitudes->count() + 1}}</td>
+<td>TOTAL</td>
+<!--recibidas-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('created_at','>=',old('b_fecha_inicio'). ' 00:00:00')->where('created_at','<=',old('b_fecha_fin'). ' 23:59:59')
+      ->count()
+   }}
+</td>
+<!--atendidas-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))
+      ->count()
+   }}
+</td>
+<!--pendientes-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>',old('b_fecha_fin'))
+      ->count()
+      
+      +
+      
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema',null)
+      ->count()
+   }}
+</td>
+<!--dictamen-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))
+      ->where('documento_emitido','dictamen')
+      ->count()
+   }}
+</td>
+<!--certificado-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))
+      ->where('documento_emitido','certificado')
+      ->count()
+   }}
+</td>
+<!--informe-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))
+      ->where('documento_emitido','informe')
+      ->count()
+   }}
+</td>
+<!--juzgado-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))
+      ->where('documento_emitido','salida_juzgado')
+      ->count()
+   }}
+</td>
+<!--archivo-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))
+      ->where('documento_emitido','archivo')
+      ->count()
+   }}
+</td>
+<!--estudios-->
+<td>
+   {{
+      $peticiones->whereIn('solicitud_id',$especialidad->solicitudes->pluck('id'))
+      ->where('fecha_sistema','>=',old('b_fecha_inicio'))->where('fecha_sistema','<=',old('b_fecha_fin'))   
+      ->sum('cantidad_estudios')
+   }}
+</td>

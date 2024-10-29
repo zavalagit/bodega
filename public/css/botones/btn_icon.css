@@ -1,0 +1,12 @@
+.btn-icon{
+    border: 0px;
+    background-color: transparent;
+}
+
+/*icon-buscar*/
+.fa-search{
+    color: #152f4a !important;
+}
+.fa-search:hover{
+    color: #c09f77 !important;
+}

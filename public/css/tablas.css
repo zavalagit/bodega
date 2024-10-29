@@ -1,0 +1,87 @@
+.contenedor-tabla {
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-left: 1px solid #ccc;
+}
+caption{
+  background-color: #394049 !important;
+  color: #c6c6c6;
+}
+thead{
+  background-color: #394049 !important;
+  text-align: center !important;
+  color: #394049 !important;
+  height: 50px !important;
+}
+th{
+  color:#c09f77;
+  padding: 8px 0 8px 0;
+}
+tbody{
+  background: #FFF !important;
+}
+th,td{
+  padding: 5px 0 !important;
+  border-radius: 0 !important;
+}
+td{
+  vertical-align: top !important;
+  color: #152f4a !important;
+}
+th.th-center{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+td.td-center{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+td.td-contador{
+  background-color:#394049 !important;
+  color:#c09f77 !important;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+td.td-numero{
+  text-align: right !important;
+  padding-right: 10px !important;
+}
+td.td-total{
+  background-color: #c09f77;
+  font-weight: bold;
+}
+
+tr.tr-total{
+  background-color: #c09f77;
+  font-weight: bold;
+}
+
+
+th,td{
+  padding-left: 10px !important;
+  padding-right: 15px !important;
+}
+
+th{
+  border-right: 1px solid #c09f77;
+  border-bottom: 1px solid #c09f77;
+}
+th:first-child{
+  border-left: 1px solid #c09f77;
+}
+td{
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+td:first-child{
+  border-left: 1px solid #ccc;
+}
+
+table{
+  border-spacing: 0 !important;
+    border-collapse: separate !important;
+ }

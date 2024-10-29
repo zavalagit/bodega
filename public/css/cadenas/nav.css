@@ -1,0 +1,48 @@
+/*Padding bottom del nav con el formulario*/
+.nav-row{
+  margin-bottom: 38px !important;
+}
+/*Ajustando posicion en Z y uso de flexbox en nav*/
+.nav{
+  position: fixed;
+  z-index: 500;
+  display:flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+/*ancho del bar*/
+.nav-bar{
+  width: 6%;
+}
+/*Tamaño de letra del icono bar*/
+.fa-bars:hover{
+  font-size: 19px;
+}
+/*ancho del titulo (sección) y personalizacion*/
+.nav-titulo{
+  width: 94%;
+  font-size: 18px;
+  font-family:monospace;
+  color: white;
+}
+/* padding top al slider de las imagenes*/
+.li-slider{
+   margin: 0 !important;
+   padding: 10px !important;
+}
+/*Nombre y cargo Perito*/
+.datos-usuario{
+   margin: 0px !important;
+   padding: 5px 0px !important;
+}
+/*Austando tamaño de iconos en menu*/
+.i-menu{
+  font-size:17px;
+}
+/*Tamaño de los iconos del menu con hover*/
+.a-menu:hover *{
+    font-size:20px;
+    color:#112046;
+}

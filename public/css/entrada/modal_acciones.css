@@ -1,0 +1,20 @@
+.btn-acciones:hover i{
+   color: #c6c6c6 !important;
+}
+/*modal acciones*/
+.acciones-enlace{
+   height: 50px;
+}
+.acciones-enlace a i{
+   color: #394049;
+}
+.acciones-enlace a span{
+   font-size: 18px !important;
+   font-weight: bold;
+   color: #394049;
+}
+.acciones-enlace a:hover i{
+   color: #c09f77;
+   /* text-decoration: underline #c09f77; */
+   /* text-transform: uppercase; */
+}

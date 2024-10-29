@@ -1,0 +1,5 @@
+/*modal inhabilitar cadena*/
+.btn-inhabilitar-opcion:hover i,
+.btn-inhabilitar-opcion:hover span{
+   color: #c09f77 !important;
+}

@@ -1,0 +1,15 @@
+div#componente-consultar-acciones{
+   background-color:#152f4a;
+   margin:0 !important;
+}
+div#componente-consultar-acciones div.col{height:30px;}
+div#componente-consultar-acciones div.col a{
+   margin-right: 15px;
+   /* background-color: rgba(192, 159, 119, 0.9 ) !important; */
+   background-color: #c6c6c6 !important;
+   padding: 1px 5px;
+   border-radius: 5px;
+}
+div#componente-consultar-acciones div.col a span{color: #000; font-Weight: bold;}
+div#componente-consultar-acciones div.col a:hover{background-color: rgba(192, 159, 119, 0.9 ) !important;}
+div#componente-consultar-acciones div.col a:hover span{color: #000;}

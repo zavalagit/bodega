@@ -1,0 +1,58 @@
+.ocultar{
+   display: none;
+}
+
+/*
+   Nota: Poner el asterisco dentro de un span, ahí poner las clases
+*/
+.asterico{
+   font-size: 20px;
+   font-weight: bold;
+}
+.asterisco-obligatorio{
+   color: tomato;
+   font-size: 20px;
+   font-weight: bold;
+}
+.asterisco-editar{
+   color: green;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.asterisco-campo-obligatorio{
+   color: tomato;
+   font-size: 20px;
+   font-weight: bold;
+}
+.asterisco-campo-editar{
+   color: green;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+div.div-fieldset{
+   margin-bottom: 15px;
+}
+fieldset{
+   background-color: rgba(192,159,119,0.2);
+   /* border: 3px solid #c09f77; */
+   border: 3px solid #152f4a;
+   border-radius: 8px;
+}
+fieldset.fieldset-subseccion{
+   margin-left: 25px;
+}
+legend{
+   /* background-color: #152f4a; */
+   background-color: #c09f77;
+   /* color: #c09f7  7; */
+   color: #152f4a ;
+   /* color: #fff ; */
+   padding: 5px 10px;
+   text-align: left;
+   font-weight: bold;
+   font-size: 15px;
+   /* text-decoration: underline; */
+   /* border-radius: 5px; */
+}

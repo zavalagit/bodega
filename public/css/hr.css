@@ -1,0 +1,39 @@
+.hr-1{
+   /* margin-top: 30px;
+   margin-bottom: 30px; */
+   background-color: #c6c6c6;
+   border: 1px solid #c6c6c6;
+   border-radius: 5px;
+
+}
+.hr-2{
+   /* margin-top: 30px;
+   margin-bottom: 30px; */
+   background-color: #394049;
+   border: 2px solid #394049;
+   border-radius: 5px;
+
+}
+.hr-3{
+   /* margin-top: 30px;
+   margin-bottom: 30px; */
+   background-color: #152f4a;
+   border: 2px solid #152f4a;
+   border-radius: 5px;
+
+}
+.hr-4{
+   /* margin-top: 30px;
+   margin-bottom: 30px; */
+   background-color: #c09f77;
+   border: 2px solid #c09f77;
+   border-radius: 5px;
+
+}
+.hr-main{
+   margin-top: 30px;
+   margin-bottom: 30px;
+   background-color: #c09f77;
+   border: 2px solid #c09f77;
+   border-radius: 5px;
+}

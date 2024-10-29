@@ -1,0 +1,195 @@
+@page {
+   margin: 0cm 0cm;
+   font-family: Arial;
+}
+
+*{
+   margin: 0;
+}
+
+body {
+   margin: 8cm 1cm 2cm 1cm;
+}
+header {
+   position: fixed;
+   top: 0.5cm;
+   left: 1cm;
+   right: 1cm;
+   height: 3.5cm;
+   /* background-color: #2a0927;
+   color: white; */
+   /* text-align: center; */
+   /* line-height: 30px; */
+}
+   .header-folio{
+      margin-bottom: 10px;
+      /* border: 1px solid black; */
+      /* background-color: #c6c6c6; */
+   }
+   .header-folio p{
+      position: relative;
+      top: 0;
+      left: 72%;
+      width:28%;
+      border: 1px solid black;
+      padding: 4px 0;
+      background-color: #c6c6c6;
+      text-align: center;
+      font-size: 15px;
+   }
+
+.header-nuc{
+   margin: 0px;
+   /* border: 1px solid black; */
+   /* width:25%; */
+   /* text-align: right; */
+   /* font-size: 16px; */
+   /* background-color: #c6c6c6; */
+   /* border-left: 8px solid #c09f77; */
+   /* padding: 1% 0%; */
+}
+   .header-nuc p{
+      position: relative;
+      top: 0;
+      left: 65%;
+      /* border: 1px solid black; */
+   }
+      .header-nuc p.nuc1{
+         width:35%;
+         font-size: 12px;
+         font-weight: bold;
+      }
+      .header-nuc p.nuc2{
+         width:34%;
+         border-left: 8px solid #c09f77;
+         padding: 3px 0 4px 0;
+         background-color: #c6c6c6;
+         text-align: center;
+         font-size: 15px;
+      }
+
+ 
+ /*__Table*/
+ table{
+   page-break-inside:avoid !important;
+ }
+ .tabla-indicios{
+   page-break-inside:auto !important;
+ }
+ 
+ 
+ 
+ /*__Encabezado*/
+ .table-encabezado{
+   width: 92% !important;
+   margin: auto;
+ }
+ .td-fge{
+   width: 20%;
+   text-align: left !important;
+   vertical-align:middle;
+ }
+ .td-mich{
+   width: 20%;
+   text-align: right !important;
+   vertical-align:middle;
+ }
+   .td-encabezado{
+     vertical-align:text-top !important;
+     width: 60%;
+     text-align: center !important;
+     margin-top: 2% !important;
+     height: 140px !important;
+   }
+   .td-encabezado p{
+     margin:0 !important;
+     padding: 0 !important;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #152f4a;
+   }
+ 
+ 
+   
+ 
+ 
+   main section{
+     /* margin: 0 6% 0 6%; */
+   }
+ 
+   .tabla, .tabla th, .tabla td{
+     border: 1px solid #737272;
+     margin: 0;
+     padding: 1px 0 1px 0;
+     text-align: center;
+     font-size: 9px;
+   }
+   .text-justify{
+     text-align: justify !important;
+     padding-left: 1px !important;
+     padding-right: 5px !important;
+   }
+   .text-left{
+     text-align: left !important;
+     padding-left: 5px !important;
+     padding-right: 2px !important;
+   }
+   .tabla th{
+     background-color: #c6c6c6;
+   }
+ 
+   .tabla-seccion-dos td{
+     padding: 0 !important;
+     font-size: 9px;
+   }
+   .tabla-seccion-dos .td-descripcion{
+     text-align: justify;
+     padding-left: 3px !important;
+     padding-right: 5px !important;
+     padding-bottom: 2px !important;
+   }
+   .td-descripcion{
+     text-align: justify;
+     padding-left: 3px !important;
+     padding-right: 5px !important;
+     padding-bottom: 2px !important;
+   }
+ 
+ 
+ 
+ 
+   .seccion-cuatro{
+     margin-top: 20px;
+     height: 100px;
+   }
+ 
+   hr {
+     page-break-after: always;
+     color: #fff;
+     border: 0px;
+   }
+ 
+ 
+   /*
+     @page{
+       margin-top: 0cm;
+       margin-bottom:0cm;
+       margin-left: 0cm;
+       margin-right: 0cm;
+     }
+ */
+ 
+ 
+ 
+  .seccion-6 p{
+    font-size: 11px;
+    margin: 0;
+  }
+ 
+  .tabla-trazabilidad{
+    margin:0 !important;
+    padding: 0 !important;
+  }
+ 
+  main section div p{
+   page-break-inside:avoid !important;
+  }

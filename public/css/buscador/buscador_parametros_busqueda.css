@@ -1,0 +1,8 @@
+p.parametro_busqueda{
+   font-size: 15px;
+   font-weight: bold;
+}
+p.parametro_busqueda span{
+   background-color:#c09f77;
+   color:#152f4a;
+}

@@ -1,0 +1,40 @@
+textarea{
+       padding: 0px !important;
+    }
+    blockquote{
+      padding: 1px 0 !important;
+      background-color: #152f4a !important;
+      color: #c6c6c6 !important;
+      border-left: 5px solid #c09f77 !important;
+    }
+    hr{
+       border-color: #2196f3;
+    }
+    .btn{
+
+       background-color: #bdbdbd;
+
+    }
+    .btn:hover{
+       background-color: #112046 !important;
+       color: #fff !important;
+    }
+
+    .fas{
+      color: #bdbdbd;
+    }
+
+    .fas:hover{
+      /* font-size: 29px; */
+      color: #ffc107;
+    }
+    /* .fa-times{
+      font-size: 20px;
+    } */
+    /* .fa-times:hover{
+      font-size: 25px;
+    } */
+
+.div-indicio:hover{
+  background-color: #e3f2fd;
+}

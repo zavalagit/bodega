@@ -1,0 +1,75 @@
+/*=====
+   Padding para el 'contenido', debido que el sidenav ocupa 300px
+   el padding del contenido debe ser 300px
+=====*/
+header, main, footer {
+   padding-left: 100px;
+}
+
+@media only screen and (max-width : 992px) {
+   header, main, footer {
+      padding-left: 0;
+   }
+}
+
+/*=====
+   Color de fondo del sidenav
+=====*/
+.sidenav-container{
+   /*background-color: #191917;*/
+
+   /*
+      cyan darken-3
+      grey darken-4
+      blue-grey darken-4
+      green accent-4
+      red lighten-1
+   */
+}
+
+/*=====
+   Imagen del sidenav
+=====*/
+.imagen{
+   display: block;
+   margin: auto;
+}
+img{
+   display: block;
+   margin: auto;
+   width: 65%;
+}
+
+
+/*=====
+   Color del background cuando el enlace esta activo
+=====*/
+.active{
+   background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/*=====
+   Color y tamaño de las letras del enlace
+=====*/
+.enlaces ul li a{
+   color: #ffffff !important;
+   font-size: 13px;
+}
+
+/*=====
+   Tamaño del icono del enlace
+=====*/
+.enlaces ul li a i{
+   font-size: 10px;
+}
+
+/*=====
+   Hover de los enlaces
+=====*/
+.enlaces ul li a:hover{
+   background-color: rgba(38, 50, 56, 0.4) !important;
+   /*
+   #3e2723
+   #e65100
+   */
+}
