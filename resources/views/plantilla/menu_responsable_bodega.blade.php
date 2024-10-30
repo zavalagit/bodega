@@ -63,6 +63,23 @@
          </li>
       </ul>
    </li>
+
+   <li class="item-menu">
+      <ul class="collapsible expandable">
+         <li>
+            <div class="menu-header collapsible-header" style="margin-bottom:10px;"><i class="fa fa-ban"></i> DESTRUCCIÓN</div>
+            <div class="menu-body collapsible-body">
+               <a href="/indicio-destruccion"><i class="fas fa-list-ol"></i><span>Listado General</span></a>
+            </div>
+            <div class="menu-body collapsible-body">
+               <a href="/registro-destruccion"><i class="fas fa-file-alt"></i><span>Registrar</span></a>
+            </div>
+            <div class="menu-body collapsible-body">
+               <a href="/reporte-destruccion"><i class="fas fa-chart-line"></i><span>Reportes</span></a>
+            </div>
+         </li>
+      </ul>
+   </li>
    <hr class="hr-4">
 
 <!--administrador-->

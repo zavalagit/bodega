@@ -236,6 +236,23 @@ header{
         </ul>
       </li>
       <hr class="hr-menu">
+      <li class="item-menu submenu">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header"><i class="fa fa-ban"></i> DESTRUCCIÓN</div>
+            <div class="collapsible-body">
+              <a href="/indicio-destruccion"><i class="fas fa-list-ol"></i><span>Listado General</span></a>
+            </div>
+            <div class="collapsible-body">
+              <a href="/registro-destruccion"><i class="fas fa-file-alt"></i><span>Registrar</span></a>
+            </div>
+            <div class="collapsible-body">
+              <a href="/reporte-destruccion"><i class="fas fa-chart-line"></i><span>Reportes</span></a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <hr class="hr-menu">
       @if (Auth::user()->tipo == 'administrador')
         <li class="item-menu submenu">
           <ul class="collapsible" data-collapsible="expandable">
