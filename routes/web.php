@@ -1182,6 +1182,8 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
    });
    
    
+   //***************************************DESTRUCCION******************************************************
+   Route::get('indicio-destruccion','DestruccionController@indicio_destruccion')->name('indicio_destruccion');
    
    
    
