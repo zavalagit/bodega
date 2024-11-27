@@ -39,6 +39,7 @@ class PrestamoController extends Controller
       $this->cadena = $cadena;
    }
    public function prestamo_form($formAccion,Cadena $cadena,Prestamo $prestamo){
+      //dd($prestamo);
       if ($formAccion == 'prestar' || ($formAccion == 'editar' && $prestamo->estado == 'activo')) {
          return view('prestamo.prestamo_form',compact('formAccion','cadena','prestamo'));
       }

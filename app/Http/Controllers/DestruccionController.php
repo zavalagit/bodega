@@ -28,4 +28,13 @@ class DestruccionController extends Controller
       }
         return view('destruccion.destruccion');
     }
+
+    public function destruccion_form($formAccion,Cadena $cadena){
+      //dd($formAccion);
+      if ($formAccion == 'registrar' ) {
+
+         return view('destruccion.destruccion_form',compact('formAccion','cadena'));
+      }
+      
+   }
 }

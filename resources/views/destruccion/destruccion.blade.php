@@ -72,7 +72,7 @@
                   
                   <!--validar-->
                   <td rowspan="{{$cadena->indicios->count()}}" class="sticky-2 td-center">
-                     <a href="/bodega/alta/{{$cadena->id}}" class="validar-enlace" data-id="{{$cadena->id}}"><i style="color: #c09f77;" class="fas fa-check-square fa-lg"></i></a>
+                     <a href="destruccion-form/registrar/{{$cadena->id}}" target="_blank" class="validar-enlace" data-id="{{$cadena->id}}"><i style="color: #c09f77;" class="fas fa-check-square fa-lg"></i></a>
                   </td>
                   
                   <!--nuc-->

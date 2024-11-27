@@ -189,7 +189,7 @@ Route::get('/',function(){
          Route::get('prestamo-multiple-form/{formAccion}/{cadenas}','PrestamoController@prestamo_multiple_form')->name('prestamo_multiple_form');
          Route::post('prestamo-save/{formAccion}/{prestamo?}','PrestamoController@prestamo_save')->name('prestamo_save');
          
-         // Route::post('prestamo-create','PrestamoController@prestamo_create'); //?
+         // Route::post('prestamo-create','PrestamoController@prestamo_create'); //
          Route::get('prestamo-multiple-pdf/{array_prestamos}','PrestamoController@prestamo_multiple_pdf');
          Route::get('prestamo-pdf/{prestamo}','PDFController@prestamo');
          Route::get('prestamos','PrestamoController@prestamos');
@@ -1184,7 +1184,7 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
    
    //***************************************DESTRUCCION******************************************************
    Route::get('indicio-destruccion','DestruccionController@indicio_destruccion')->name('indicio_destruccion');
-   
+   Route::get('destruccion-form/{formAccion}/{cadena}','DestruccionController@destruccion_form')->name('destruccion_form');
    
    
 	Route::get('/clear-cache', function() {
