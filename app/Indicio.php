@@ -24,6 +24,7 @@ class Indicio extends Model
       'resguardo',
       'cadena_id',      
       'baja_id',
+      'list_destru'
    ];
 
    public function cadena(){

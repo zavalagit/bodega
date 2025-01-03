@@ -11,16 +11,16 @@ class DestruccionController extends Controller
         // echo "hola destruccion";
         set_time_limit(0);
       if ( $request->has('buscar_btn') && $request->filled('buscar_texto') ) {
-         $cadenas = Cadena::/*where('fiscalia_id',Auth::user()->fiscalia_id)
-                           ->*/where('estado','validada')
+         $cadenas = Cadena::where('estado','validada')
                            ->where(function($q) use($request){
-                              $q->where('nuc','like',"%{$request->buscar_texto}%")
-                              ->orWhereHas('indicios',function($a) use($request){
-                                 $a->where('descripcion','like',"%{$request->buscar_texto}%");
-                              });
-                           })->take(50)
-                           ->get();
-
+                                $q->where('nuc','like',"%{$request->buscar_texto}%")
+                                    ->WhereHas('indicios',function($a){
+                                       $a->whereIN('estado',['activo','prestamo']);
+                                
+                                    });
+                          })->take(70)
+                          ->get();                  
+         //dd($cadenas);
          return view('destruccion.destruccion',[
             'cadenas' => $cadenas,
             'buscar_texto' => $request->buscar_texto,

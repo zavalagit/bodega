@@ -1,5 +1,9 @@
 @extends('plantilla.template_sin_menu2')
 
+@section('titulo')
+   FORMULARIO
+@endsection
+
 @section('css')
    <link rel="stylesheet" href="{{asset('/css/tablas.css')}}">
    <link rel="stylesheet" href="{{asset('/css/block.css')}}">
@@ -16,7 +20,7 @@
 @endsection
 
 @section('seccion')
-    PRESTAMO DE CADENA CON FOLIO {{$cadena->folio_bodega}}
+    REGISTRAR PARA LISTADO DESTRUCCION {{$cadena->folio_bodega}}
 @endsection
 
 @section('contenido')
@@ -42,7 +46,7 @@
 
          <div class="col s12">
             <table>
-               @if ($cadena->indicios->count() > 3)
+               {{-- @if ($cadena->indicios->count() > 3)
                   <thead>
                      <tr>
                         <th width="6%" class="th-center">
@@ -54,7 +58,7 @@
                         <th colspan="4"><b>SELECCIONA TODOS LOS INDICIO/EVIDENCIAS</b></th>
                      </tr>
                   </thead>
-               @endif
+               @endif --}}
                <thead>
                   <tr>
                      <th class="th-center">SELECCIONAR</th>
@@ -76,7 +80,7 @@
                                  class="indicio-checkbox filled-in"
                                  data-num="{{$indicio->numero_indicios}}"
                                  name="indicios[]" value={{$indicio->id}}
-                                 {{!in_array($indicio->estado,['activo','activo_baja']) ? 'disabled' : ''}}
+                                 {{in_array($indicio->list_destru,[1]) ? 'disabled' : ''}}
                               />
                               <span></span>
                            </label>

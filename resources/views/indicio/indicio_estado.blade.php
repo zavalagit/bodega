@@ -22,9 +22,7 @@
       @break
 @endswitch
 
-<!--indicio_observacion-->
-@if(isset($indicio->observacion) && $indicio->observacion != '')
-   <a href="" class="btn-observacion_indicio" data-indicio-nuc="{{$indicio->cadena->nuc}}" data-indicio-observacion="{{$indicio->observacion}}">
-      <i style="color:rgb(80, 9, 245);" class="fas fa-square cadena-estado-observacion"></i>
-   </a>
+<!--indicio_listado_destrucion-->
+@if($indicio->list_destru == 1)
+      <i style="color:rgb(80, 9, 245);" class="fas fa-square indicio-listado-destruccion"></i>
 @endif

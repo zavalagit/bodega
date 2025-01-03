@@ -1,5 +1,5 @@
 
-@extends('bodega.plantilla')
+@extends('plantilla.template2')
 
 @section('titulo')
    DESTRUCCION
@@ -36,7 +36,7 @@
                <input type="text" id="buscar-texto" name="buscar_texto" value="{{$buscar_texto}}">
             @endisset
             @empty($buscar_texto)
-               <input type="text" id="buscar-texto" placeholder="Buscar... N.U.C., Descripción" name="buscar_texto">
+               <input type="text" id="buscar-texto" placeholder="Buscar... N.U.C. parcial o total" name="buscar_texto">
             @endempty
          </div>
          <div class="input-field col s2">
@@ -123,64 +123,7 @@
    </div>
 
 
-   <!--Modal Rechazo-->
-   <div id="nota" class="modal">
-      <div class="modal-content">
-         <h5>Nota</h5>
-         <div class="row">
-            <form class="col s12" id="form-nota">
-               <input type="hidden" id="_token" name="_token" value="{{csrf_token()}}">
-               <input type="hidden" id="id_cadena_modal" name="id_cadena" value="">
-               <div class="row">
-                 <div class="input-field col s12">
-                   <textarea id="nota-mensaje" name="nota" class="materialize-textarea"></textarea>
-                   <label for="textarea1"></label>
-                 </div>
-               </div>
-               <div class="row">
-                  <div class="col s1 offset-s11">                     
-                     <a class="right-align" id="btn-nota" href=""><i class="fa fa-paper-plane" aria-hidden="true"></i></a> 
-                  </div>                  
-               </div>
-            </form>
-         </div>
-      </div>
-      <!--
-      <div class="modal-footer">
-         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-      </div>
-      -->
-   </div>
-
-
-   <!--Modal Validar-->
-   <div id="modal-validar" class="modal">
-      <div class="modal-content">
-         <h5>Validar cadena</h5>
-         <div class="row">
-            <form class="col s12" id="form-validar" autocomplete="off">
-               <input type="hidden" id="_token" name="_token" value="{{csrf_token()}}">
-               <input type="hidden" id="id_modal_validar" name="id_cadena" value="">
-               <div class="row">
-                 <div class="input-field col s12">
-                   <input id="folio" type="text" class="validate" name="folio">
-                  <label for="folio">Folio Interno Bodega</label>
-                 </div>
-               </div>
-               <div class="row">
-                  <div class="col s1 offset-s11">                     
-                     <a class="right-align" id="btn-validar" href=""><i class="fa fa-check icon-check" aria-hidden="true"></i></a> 
-                  </div>                  
-               </div>
-            </form>
-         </div>
-      </div>
-      <!--
-      <div class="modal-footer">
-         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
-      </div>
-      -->
-   </div>
+   
 
    <!--Modal observación-->
 <div id="modal-observacion" class="modal">
@@ -206,12 +149,6 @@
    </div>
 </div>
 
-<!-- Modal Anexos -->
-@include('modal.modal_anexos')
-
-<!--modal etiqueta-->
-@include('modal.modal_etiqueta')
-
 @endsection
 
 @section('js')
@@ -222,9 +159,10 @@
 
    <script src="{{asset('js/modal/modal.js')}}"></script>
    <script src="{{asset('js/indicio/indicio_observacion.js')}}"></script>
-   {{-- <script type="text/javascript" src="{{asset('js/cadenas/anexos_pdf.js')}}" ></script>
-   <script type="text/javascript" src="{{asset('js/cadenas/etiqueta_pdf.js')}}" ></script>
-   <script type="text/javascript" src="{{asset('js/cadenas/etiqueta.js')}}" ></script> --}}
+   <script src="{{asset('js/indicio/indicio_estado.js')}}"></script>
+
+   <script src="{{asset('plugins/viewer_js/js/viewer.js')}}"></script>
+   <script src="{{asset('plugins/viewer_js/js/jquery-viewer.js')}}"></script>
 
    <script>
       var texto = $('#buscar-texto').val();
