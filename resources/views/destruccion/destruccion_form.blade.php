@@ -114,7 +114,7 @@
          </div>
 
          <section id="section-prestamo">
-            @include('prestamo.prestamo_datos')
+            @include('destruccion.datos_listado_destruccion')
          </section>
          
 
