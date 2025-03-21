@@ -1184,7 +1184,7 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
    
    //***************************************DESTRUCCION******************************************************
    Route::get('indicio-destruccion','DestruccionController@indicio_destruccion')->name('indicio_destruccion');
-   Route::get('destruccion-form/{formAccion}/{cadena}','DestruccionController@destruccion_form')->name('destruccion_form');
+   Route::get('destruccion-form/{formAccion}/{cadena}/{depuracion?}','DestruccionController@destruccion_form')->name('destruccion_form');
    
    
 	Route::get('/clear-cache', function() {

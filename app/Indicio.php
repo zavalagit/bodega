@@ -43,6 +43,10 @@ class Indicio extends Model
       return $this->belongsToMany('App\Baja')->withPivot('id','baja_descripcion','baja_cantidad_indicios','baja_tipo','baja_descripcion_antes');
    }
 
+   public function depuraciones(){
+      return $this->belongsToMany('App\Depuracion')->withPivot('id','depuracion_cantidad_indicios','listdepuracion_tipo')->withTimestamps();
+   }
+
    public function arma(){
         return $this->hasOne('App\Arma');
    }

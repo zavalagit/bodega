@@ -24,6 +24,7 @@ class CrearTablaIndicioListdepuracion extends Migration
             $table->bigInteger('listdepuracion_id')->unsigned();
             $table->foreign('listdepuracion_id')->references('id')->on('bodega.listdepuraciones');
 
+            $table->Integer('depuracion_cantidad_indicios');
             $table->string('listdepuracion_tipo');
 
             $table->timestamps();

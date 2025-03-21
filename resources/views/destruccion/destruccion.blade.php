@@ -1,5 +1,5 @@
 
-@extends('plantilla.template2')
+@extends('plantilla.template')
 
 @section('titulo')
    DESTRUCCION

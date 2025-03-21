@@ -3,10 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Depuracion;
 use App\Cadena;
+use App\Indicio;
+use App\Soltdepuracion;
+use App\Institucion;
+use App\Fiscalia;
 
 class DestruccionController extends Controller
 {
+   public $cadena;
+   public $depuracion;
+   public $formAccion;
+
+   public function __construct(){
+      setlocale(LC_TIME,"es_MX.UTF-8");
+      date_default_timezone_set('America/Mexico_City');
+   }
+
+
     public function indicio_destruccion(Request $request){
         // echo "hola destruccion";
         set_time_limit(0);
@@ -29,12 +44,12 @@ class DestruccionController extends Controller
         return view('destruccion.destruccion');
     }
 
-    public function destruccion_form($formAccion,Cadena $cadena){
+    public function destruccion_form($formAccion,Cadena $cadena, Depuracion $depuracion){
       //dd($formAccion);
-      if ($formAccion == 'registrar' ) {
-
-         return view('destruccion.destruccion_form',compact('formAccion','cadena'));
-      }
+      $instituciones = Institucion::all();
+	   $regiones = Fiscalia::all();
+      $solicitud_depuraciones = Soltdepuracion::all();
+         return view('destruccion.destruccion_form',compact('formAccion', 'cadena', 'depuracion', 'solicitud_depuraciones','instituciones','regiones'));
       
    }
 }
