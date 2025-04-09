@@ -8,7 +8,7 @@
 	  
 	  <!--Solicitud id-->
       <div class="input-field col s12 m6 l6">
-         <input type="text" id="solicitud_id" name="solictud_id" value="{{ isset($baja->id) ? $baja->concepto : '' }}">
+         <input type="text" id="solicitud_id" name="solicitud_id" value="{{ isset($baja->id) ? $baja->concepto : '' }}">
          <label for="solicitud_id">Solicitud id</label>
       </div>
      <!--Cadenas id-->

@@ -13,7 +13,7 @@ class CrearTablaIndicioListdepuracion extends Migration
      */
     public function up()
     {
-        Schema::create('indicio_listdepuracion', function (Blueprint $table) {
+        Schema::create('depuracion_indicio', function (Blueprint $table) {
             $table->bigIncrements('id');
 
             //llave foranea del del indicio
@@ -21,13 +21,16 @@ class CrearTablaIndicioListdepuracion extends Migration
             $table->foreign('indicio_id')->references('id')->on('bodega.indicios');
 
             //llave foranea del del indicio
-            $table->bigInteger('listdepuracion_id')->unsigned();
+            $table->bigInteger('depuracion_id')->unsigned();
             $table->foreign('listdepuracion_id')->references('id')->on('bodega.listdepuraciones');
 
             $table->Integer('depuracion_cantidad_indicios');
             $table->string('listdepuracion_tipo');
 
             $table->timestamps();
+
+            $table->longText('depuracion_descripcion')->nullable();
+            $table->longText('depuracion_descripcion_antes')->nullable();
         });
     }
 
@@ -38,6 +41,6 @@ class CrearTablaIndicioListdepuracion extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('indicio_listdepuracion');
+        Schema::dropIfExists('depuracion_indicio');
     }
 }

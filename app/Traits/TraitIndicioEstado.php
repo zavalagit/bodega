@@ -17,6 +17,13 @@ trait TraitIndicioEstado{
          if ( $indicio->prestamos->contains('estado','activo') ) $indicio->estado = 'prestamo';
          else $indicio->estado = 'activo';
       }
+      //depuraciones
+      elseif( $indicio->depuraciones->count() ){
+         if( $indicio->numero_indicios - $indicio->depuraciones()->wherePivot('indicio_id',$indicio->id)->sum('depuracion_cantidad_indicios')  == 0 ) $indicio->estado = 'depuracion';
+         else{
+            $indicio->estado = 'activo_depuracion';
+         }
+      }
       //activo
       else $indicio->estado = 'activo';
 

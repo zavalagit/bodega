@@ -19,8 +19,8 @@ class Depuracion extends Model
     ];
 
     public function indicios(){
-      return $this->belongsToMany('App\Indicio','indicio_listdepuracion','indicio_id','listdepuracion_id')
-                  ->withPivot('id','listdepuracion_tipo')
+      return $this->belongsToMany('App\Indicio','depuracion_indicio','depuracion_id','indicio_id')
+                  ->withPivot('id','depuracion_cantidad_indicios', 'listdepuracion_tipo', 'depuracion_descripcion', 'depuracion_descripcion_antes')
                   ->withTimestamps();
    }
 
