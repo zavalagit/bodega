@@ -58,10 +58,10 @@
                Realizar
             </button>
          </div>
-         <!--Boton pdf-->
-         <div class="col s12 l1 offset-l11 center-align scale-transition scale-out">
-            <a class="a-btn" id="btn-depuracion-pdf" style="display: inline-block !important; width:100%;" href="" target="_blank">
-               <span>PDF</span> <i class="fas fa-file-pdf"></i>
+         <!--Boton Terminar-->
+         <div class="col s12 l2 offset-l10 center-align scale-transition scale-out">
+            <a class="a-btn" id="btn-depuracion-terminar" style="display: inline-block !important; width:100%;" href="" target="_blank">
+               <span>TERMINAR</span> <i class="fas fa-reply-all"></i>
             </a>
          </div>                       
       </div>
@@ -89,7 +89,7 @@
 @endsection
 
 @section('js')
-   {{-- <script src="{{asset('js/depuracion/depuracion_form.js')}}" charset="utf-8"></script> --}}
+   <script src="{{asset('js/depuracion/depuracion_form.js')}}" charset="utf-8"></script>
    <script src="{{asset('js/baja/baja_recibe.js')}}"></script>
    <script src="{{asset('js/indicio/indicios_select_todo.js')}}"></script>
    <script src="{{asset('js/depuracion/depuracion_tipo.js')}}"></script>

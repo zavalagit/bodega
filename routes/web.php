@@ -1183,6 +1183,7 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
    
    
    //***************************************DESTRUCCION******************************************************
+   Route::get('listado-destruccion','DestruccionController@listado_destruccion')->name('listado_destruccion');
    Route::get('indicio-destruccion','DestruccionController@indicio_destruccion')->name('indicio_destruccion');
    Route::get('destruccion-form/{formAccion}/{cadena}/{depuracion?}','DestruccionController@destruccion_form')->name('destruccion_form');
    Route::post('destruccion-save/{formAaccion}/{cadena}/{depuracion?}','DestruccionController@depuracion_save');

@@ -2,7 +2,7 @@
 @extends('plantilla.template')
 
 @section('titulo')
-   BUSCAR DESTRUCCION
+   LISTADO DESTRUCCION
 @endsection
 
 @section('css')
@@ -21,7 +21,7 @@
 
 
 
-@section('seccion', 'ASIGANAR INDICIOS DEPURACION')
+@section('seccion', 'LISTADO INDICIOS DEPURACION')
 
 
 @section('contenido')

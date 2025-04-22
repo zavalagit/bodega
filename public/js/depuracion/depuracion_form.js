@@ -22,12 +22,16 @@ $(function(){
             /*
             * Se ejecuta cuando no hay ningun error
             * */
-            //console.log(respuesta);
+            console.log(respuesta);
 
-            // $('#btn-depuracion-pdf').attr('href','/bodega/baja-pdf/'+respuesta.baja_id);
-            // $('#btn-depuracion').parent().addClass('scale-out');
-            // $('#btn-depuracion-pdf').parent().removeClass('scale-out').addClass('scale-in');
+            // $('#btn-depuracion-terminar').click(function(){ window.open('','_parent',''); window.close(); });
+            $('#btn-depuracion').parent().addClass('scale-out');
+            $('#btn-depuracion-terminar').parent().removeClass('scale-out').addClass('scale-in');
             alertify.success("Depuracion registrada")
+            setTimeout(function(){
+               window.close();
+            }, 5000);
+            
          },
          error: function(respuesta){
             $('#btn-depuracion').empty().prop("disabled",false).append('Registrar');

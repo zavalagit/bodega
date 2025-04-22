@@ -22,7 +22,12 @@ class DestruccionController extends Controller
 
    public function __construct(){
       setlocale(LC_TIME,"es_MX.UTF-8");
-      date_default_timezone_set('America/Mexico_City');
+      // no tiene zona horario de verano
+      date_default_timezone_set('America/Regina');
+   }
+
+   public function listado_destruccion(){
+      return view('destruccion.destruccion_listado');
    }
 
 
@@ -49,7 +54,7 @@ class DestruccionController extends Controller
     }
 
    public function destruccion_form($formAccion,Cadena $cadena, Depuracion $depuracion){
-      //dd($formAccion);
+      //dd(date('H:i'));
       $instituciones = Institucion::all();
 	   $regiones = Fiscalia::all();
       $solicitud_depuraciones = Soltdepuracion::all();
@@ -88,9 +93,9 @@ class DestruccionController extends Controller
       $this->depuracion->save();
    }
 
-   public function depuracion_save(Request $request, $formAccion, Cadena $cadena, Depuracion $depuracion){
+   public function depuracion_save(DepuracionFormRequest $request, $formAccion, Cadena $cadena, Depuracion $depuracion){
       //dd([$formAccion, $cadena, $depuracion->id]);
-      // dd($request->all());
+      //dd($request->all());
       // return response()->json([
       //    'satisfactorio' => false,
       //    'request' => $request->all(),
@@ -103,10 +108,9 @@ class DestruccionController extends Controller
       $this->set_depuracion_atributos($request);
       if($formAccion == 'registrar') $this->set_depuracion_indicios($request);
 
-      // return response()->json([
-      //    'respuesta' => true,
-      //    'baja_id' => $this->baja->id,
-      //    'accion' => $formAccion,
-      // ]);
+      return response()->json([
+         'respuesta' => true,
+         'accion' => $formAccion,
+      ]);
    }
 }
