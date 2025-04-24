@@ -11,17 +11,17 @@
          <input type="text" id="solicitud_id" name="solicitud_id" value="{{ isset($baja->id) ? $baja->concepto : '' }}">
          <label for="solicitud_id">Solicitud id</label>
       </div>
-     <!--Cadenas id-->
+     {{-- <!--Cadenas id-->
       <div class="input-field col s12 m6 l6">
          <input type="text" id="cadena_id" name="cadena_id" value="{{ isset($baja->id) ? $baja->concepto : '' }}">
          <label for="cadena_id">Cadenas id</label>
-      </div>
+      </div> --}}
 
-     <!--User id-->
+     {{-- <!--User id-->
       <div class="input-field col s12 m4 l4">
          <input type="text" id="user_id" name="user_id" value="{{ isset($baja->id) ? $baja->concepto : '' }}">
          <label for="user_id">User id</label>
-      </div>
+      </div> --}}
    <!--hora de registro-->
       <div class="input-field col s12 m4 l4">
          <input type="time" id="registro_hora" name="registro_hora" value="{{ isset($baja->id) ? date('H:i:s',strtotime($baja->hora)) : date('H:i')}}">

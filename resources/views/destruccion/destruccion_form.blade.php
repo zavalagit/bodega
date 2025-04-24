@@ -40,9 +40,10 @@
 
       @include('destruccion.form_select_indicios3')
       @include('destruccion.depuracion_form_depuracion_parcial')
+      {{-- @include('destruccion.depuracion_form_responsable') --}}
       @include('destruccion.depuracion_form_datos_generales')
-      {{--@include('baja.baja_form_entrega')
-      @include('baja.baja_form_recibe') --}}
+      @include('destruccion.depuracion_form_responsable')
+      {{-- @include('baja.baja_form_recibe') --}}
 
       <div class="row">
          <div class="col s12">
