@@ -27,7 +27,19 @@ class DestruccionController extends Controller
    }
 
    public function listado_destruccion(){
+      // aqui se va a mostrar el listado seleccionando indicios y agregando la solicitud depuracion
+      // prueba de la columna folio_interno
+      // $numero = 22;
+      // $numeroConCeros = str_pad($numero, 5, "0", STR_PAD_LEFT);
+
+      // echo $numeroConCeros;
+      // dd(date($numeroConCeros));
       return view('destruccion.destruccion_listado');
+   }
+
+   public function listado_soldepuracion(){
+      $solicitud_depuraciones = Soltdepuracion::all();
+      return view('destruccion.solicitud_depuracion_listado', compact('solicitud_depuraciones'));
    }
 
 

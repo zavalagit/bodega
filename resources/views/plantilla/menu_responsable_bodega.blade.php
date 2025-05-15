@@ -72,10 +72,10 @@
                <a href="/listado-destruccion"><i class="fas fa-list-ol"></i><span>Listado General</span></a>
             </div>
             <div class="menu-body collapsible-body">
-               <a href="/indicio-destruccion"><i class="fas fa-list-ol"></i><span>Asignar Indicio</span></a>
+               <a href="/indicio-destruccion"><i class="far fa-calendar-check"></i><span>Asignar Indicio</span></a>
             </div>
             <div class="menu-body collapsible-body">
-               <a href="/registro-destruccion"><i class="fas fa-file-alt"></i><span>Registrar</span></a>
+               <a href="/listado-soldepuracion"><i class="far fa-file-word"></i><span>Registrar Solicitud</span></a>
             </div>
             <div class="menu-body collapsible-body">
                <a href="/reporte-destruccion"><i class="fas fa-chart-line"></i><span>Reportes</span></a>

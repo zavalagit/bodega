@@ -1187,7 +1187,8 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
    Route::get('indicio-destruccion','DestruccionController@indicio_destruccion')->name('indicio_destruccion');
    Route::get('destruccion-form/{formAccion}/{cadena}/{depuracion?}','DestruccionController@destruccion_form')->name('destruccion_form');
    Route::post('destruccion-save/{formAaccion}/{cadena}/{depuracion?}','DestruccionController@depuracion_save');
-   
+   Route::get('listado-soldepuracion','DestruccionController@listado_soldepuracion')->name('listado_soldepuracion');
+   Route::get('soldepuracion-form/{formAccion}/{solicitud?}','DestruccionController@soldepuracion_form')->name('soldepuracion_form');
    
 	Route::get('/clear-cache', function() {
 		// borrar caché de la aplicación

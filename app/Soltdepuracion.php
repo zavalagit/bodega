@@ -10,6 +10,7 @@ class Soltdepuracion extends Model
 
     protected $fillable = [
       'nuc',
+      'folio_interno',
       'fecha_solicitud',
       'M.P_solicitud',
       'unidad_solicitud',

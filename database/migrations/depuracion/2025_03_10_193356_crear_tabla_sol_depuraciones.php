@@ -17,6 +17,7 @@ class CrearTablaSolDepuraciones extends Migration
             $table->bigIncrements('id');
 
             $table->string('nuc');
+            $table->string('folio_interno');
             $table->date('fecha_solicitud');
             $table->string('M_P_solicitud')->nullable();
             $table->string('unidad_solicitud')->nullable();
