@@ -57,16 +57,17 @@
       <table id="tabla-entradas" class="highlight">
          <thead>
             <tr>
-               <th width="20" class="th-center">Nº</th>
-               <th class="th-center">Acción</th>
+               <th width="25" class="th-center">Nº</th>
+               <th width="80" class="th-center">Acción</th>
             {{-- <th width="80">Rechazar</th> --}}
             {{-- <th width="70">Validar</th> --}}
             <th width="150">N.U.C.</th>
             <th width="150">Folio Interno</th>
-            <th>Fecha solicitud</th>
-            <th>M.P. solicita</th>
-            <th>Area solicitud</th>
-            <th>Fecha Resepcion</th>
+            <th width="120">Fecha Solicitud</th>
+            <th>Cargo M.P.</th>
+            <th>M.P. Solicita</th>
+            <th>Area Solicitud</th>
+            <th width="120">Fecha Resepcion</th>
             {{-- <th width="70">Estado</th>
             <th class="th-descripcion" width="750">Descripción</th> --}}
             </tr>
@@ -89,11 +90,14 @@
                   <td width="150px" style="background-color: #394049;color: #c6c6c6 !important;"><b>{{$solicitud->nuc}}</b></td>
                   
                   <!--folio_interno-->
-                  <td style="background-color: #ffffff;color: #db1515 !important;"><b>{{$solicitud->folio_interno}}</b></td> 
+                  <td class="td-center" style="background-color: #ffffff;color: #db1515 !important;"><b>{{$solicitud->folio_interno}}</b></td> 
                   
 
                   <!--fecha_solicitud-->
-                  <td>{{$solicitud->fecha_solicitud}}</td>
+                  <td class="td-center">{{$solicitud->fecha_solicitud}}</td>
+
+                   <!--cargo del M.P.-->
+                  <td>{{$solicitud->unidad_solicitud}}</td>
 
                   <!--M.P. los solicita-->
                   <td>{{$solicitud->M_P_solicitud}}</td>
@@ -102,7 +106,7 @@
                   <td>{{$solicitud->unidad_solicitud}}</td>
 
                   <!--fecha resepcion-->
-                  <td>{{$solicitud->fecha_recepcion_solicitud}}</td>
+                  <td class="td-center">{{$solicitud->fecha_recepcion_solicitud}}</td>
                   
                @empty
                   <tr>

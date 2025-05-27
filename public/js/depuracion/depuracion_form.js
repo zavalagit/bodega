@@ -27,7 +27,7 @@ $(function(){
             // $('#btn-depuracion-terminar').click(function(){ window.open('','_parent',''); window.close(); });
             $('#btn-depuracion').parent().addClass('scale-out');
             $('#btn-depuracion-terminar').parent().removeClass('scale-out').addClass('scale-in');
-            alertify.success("Depuracion registrada")
+            alertify.success("Registrada")
             setTimeout(function(){
                window.close();
             }, 5000);

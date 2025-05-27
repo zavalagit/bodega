@@ -20,6 +20,7 @@ class CrearTablaSolDepuraciones extends Migration
             $table->string('folio_interno');
             $table->date('fecha_solicitud');
             $table->string('M_P_solicitud')->nullable();
+            $table->string('cargo_M_P')->nullable();
             $table->string('unidad_solicitud')->nullable();
 
             $table->date('fecha_recepcion_solicitud');

@@ -29,20 +29,20 @@
 @endsection
 
 @section('seccion')
-    LISTADO DEPURACION CON FOLIO {{$cadena->folio_bodega}}
+    FORMULARIO DE SOLICITUD DEPURACION
 @endsection
 
 @section('contenido')
 
-   <form id="form-depuracion" action=" {{ ($formAccion == 'editar') ? "/destruccion-save/$formAccion/$cadena->id/$baja->id" : "/destruccion-save/$formAccion/$cadena->id" }}" method="POST">
+   <form id="form-depuracion" action=" {{ ($formAccion == 'editar') ? "/soldepuracion-save/$formAccion/$solicitud->id" : "/soldepuracion-save/$formAccion" }}" method="POST">
       {{ csrf_field() }}
       <input type="hidden" name="depuracion_accion" value="{{$formAccion}}">
 
-      @include('destruccion.form_select_indicios3')
-      @include('destruccion.depuracion_form_depuracion_parcial')
+      {{-- @include('destruccion.form_select_indicios3') --}}
+      {{-- @include('destruccion.depuracion_form_depuracion_parcial') --}}
       {{-- @include('destruccion.depuracion_form_responsable') --}}
-      @include('destruccion.depuracion_form_datos_generales')
-      @include('destruccion.depuracion_form_responsable')
+      @include('destruccion.solicitud_depuracion_form_datos_generales')
+      {{-- @include('destruccion.depuracion_form_responsable') --}}
       {{-- @include('baja.baja_form_recibe') --}}
 
       <div class="row">
@@ -71,26 +71,10 @@
    </form>
 
 
-
-
-<!--Modal Servidor Público-->
-{{-- <div id="modal-peritos" class="modal">
-   <div class="row">
-      <div id="modal-header" class="col s12 modal-peritos-header">
-         <p class="header-titulo">Servidor público recibe</p >
-      </div>
-   </div>
-   <div id="modal-body" class="row modal-peritos-body"> --}}
-       <!--body-->
-   {{-- </div>
-   <div id="modal-footer" class="modal-peritos-footer"> --}}
-      {{-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a> --}}
-   {{-- </div>
-</div> --}}
 @endsection
 
 @section('js')
-   <script src="{{asset('js/depuracion/depuracion_form.js')}}" charset="utf-8"></script>
+   {{-- <script src="{{asset('js/depuracion/depuracion_form.js')}}" charset="utf-8"></script> --}}
    <script src="{{asset('js/baja/baja_recibe.js')}}"></script>
    <script src="{{asset('js/indicio/indicios_select_todo.js')}}"></script>
    <script src="{{asset('js/depuracion/depuracion_tipo.js')}}"></script>

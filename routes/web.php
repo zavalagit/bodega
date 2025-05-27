@@ -1189,7 +1189,8 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
    Route::post('destruccion-save/{formAaccion}/{cadena}/{depuracion?}','DestruccionController@depuracion_save');
    Route::get('listado-soldepuracion','DestruccionController@listado_soldepuracion')->name('listado_soldepuracion');
    Route::get('soldepuracion-form/{formAccion}/{solicitud?}','DestruccionController@soldepuracion_form')->name('soldepuracion_form');
-   
+   Route::post('soldepuracion-save/{formAaccion}/{solicitud?}','DestruccionController@soldepuracion_save');
+
 	Route::get('/clear-cache', function() {
 		// borrar caché de la aplicación
 		Artisan::call('cache:clear');

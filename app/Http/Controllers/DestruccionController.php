@@ -19,6 +19,7 @@ class DestruccionController extends Controller
    public $cadena;
    public $depuracion;
    public $formAccion;
+   public $solicitud;
 
    public function __construct(){
       setlocale(LC_TIME,"es_MX.UTF-8");
@@ -40,6 +41,20 @@ class DestruccionController extends Controller
    public function listado_soldepuracion(){
       $solicitud_depuraciones = Soltdepuracion::all();
       return view('destruccion.solicitud_depuracion_listado', compact('solicitud_depuraciones'));
+   }
+
+   public function soldepuracion_form($formAccion, Soltdepuracion $solicitud){
+      // dd([$formAccion, $solicitud]);
+      return view('destruccion.solicitud_depuracion_form',compact('formAccion','solicitud'));
+   }
+
+   public function soldepuracion_save(Request $request){
+      //dd($request->all());
+      return response()->json([
+         'satisfactorio' => false,
+         'request' => $request->all(),
+      ]);
+
    }
 
 
