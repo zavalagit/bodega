@@ -8,7 +8,7 @@ class DepuracionFormRequest extends FormRequest
 {
     public function __construct(){
         setlocale(LC_TIME,"es_MX.UTF-8");
-        date_default_timezone_set('America/Mexico_City');
+        date_default_timezone_set('America/Regina');
      }
     /**
      * Determine if the user is authorized to make this request.

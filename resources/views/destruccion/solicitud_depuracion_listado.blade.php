@@ -76,38 +76,39 @@
             @isset($solicitud_depuraciones)
                @php $n = 1; @endphp
                @forelse ($solicitud_depuraciones as $key => $solicitud)
-                  <!--contador-->
-                  <td class="sticky-1 td-contador"><b>{{$n++}}</b></td>
+                  <tr>
+                     <!--contador-->
+                     <td class="sticky-1 td-contador"><b>{{$n++}}</b></td>
 
-                  <!--acción-->
-                  <td style="background-color: #c09f77;color:" class="td-center">
-                     <a href="" class="btn-acciones" data-cadena-folio="{{$solicitud->id}}" data-cadena-id="{{$solicitud->id}}">
-                        <i style="color: #152f4a;" class="fas fa-ellipsis-h fa-lg"></i>
-                     </a>
-                  </td>
-                  
-                  <!--nuc-->
-                  <td width="150px" style="background-color: #394049;color: #c6c6c6 !important;"><b>{{$solicitud->nuc}}</b></td>
-                  
-                  <!--folio_interno-->
-                  <td class="td-center" style="background-color: #ffffff;color: #db1515 !important;"><b>{{$solicitud->folio_interno}}</b></td> 
-                  
+                     <!--acción-->
+                     <td style="background-color: #c09f77;color:" class="td-center">
+                        <a href="" class="btn-acciones" data-cadena-folio="{{$solicitud->id}}" data-cadena-id="{{$solicitud->id}}">
+                           <i style="color: #152f4a;" class="fas fa-ellipsis-h fa-lg"></i>
+                        </a>
+                     </td>
+                     
+                     <!--nuc-->
+                     <td width="150px" style="background-color: #394049;color: #c6c6c6 !important;"><b>{{$solicitud->nuc}}</b></td>
+                     
+                     <!--folio_interno-->
+                     <td class="td-center" style="background-color: #ffffff;color: #db1515 !important;"><b>{{$solicitud->folio_interno}}</b></td> 
+                     
 
-                  <!--fecha_solicitud-->
-                  <td class="td-center">{{$solicitud->fecha_solicitud}}</td>
+                     <!--fecha_solicitud-->
+                     <td class="td-center">{{$solicitud->fecha_solicitud}}</td>
 
-                   <!--cargo del M.P.-->
-                  <td>{{$solicitud->unidad_solicitud}}</td>
+                     <!--cargo del M.P.-->
+                     <td>{{$solicitud->unidad_solicitud}}</td>
 
-                  <!--M.P. los solicita-->
-                  <td>{{$solicitud->M_P_solicitud}}</td>
+                     <!--M.P. los solicita-->
+                     <td>{{$solicitud->M_P_solicitud}}</td>
 
-                  <!--Area de la solicitud-->
-                  <td>{{$solicitud->unidad_solicitud}}</td>
+                     <!--Area de la solicitud-->
+                     <td>{{$solicitud->unidad_solicitud}}</td>
 
-                  <!--fecha resepcion-->
-                  <td class="td-center">{{$solicitud->fecha_recepcion_solicitud}}</td>
-                  
+                     <!--fecha resepcion-->
+                     <td class="td-center">{{$solicitud->fecha_recepcion_solicitud}}</td>
+                  </tr>
                @empty
                   <tr>
                      <td colspan="11">
@@ -117,14 +118,14 @@
                @endforelse
             @endisset
             @empty($solicitud_depuraciones)
-            <tr>
-               <td colspan="9">
-                  <blockquote class="yellow lighten-2">
-                        <b>Realice una busqueda</b> <i class="fas fa-search"></i>
-                  </blockquote>
-               </td>
-            </tr>
-         @endempty
+               <tr>
+                  <td colspan="9">
+                     <blockquote class="yellow lighten-2">
+                           <b>Realice una busqueda</b> <i class="fas fa-search"></i>
+                     </blockquote>
+                  </td>
+               </tr>
+            @endempty
          </tbody>
       </table>
    </div>
