@@ -1195,3 +1195,11 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
 		// borrar caché de vista
 		Artisan::call('view:clear');
 	});
+
+
+
+
+
+
+
+   //***************************************LOCALIZACION DE NUC******************************************************
