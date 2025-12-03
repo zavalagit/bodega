@@ -41,7 +41,7 @@ $(function(){
    $(document.body).on('keyup change','.baja-cantidad-indicios',function(){
       $(this).attr('max');
       $(this).val();
-      console.log( 'hola');
+      console.log( 'holazavala');
       console.log( $(this).attr('max') - $(this).val() );
 
       if( $(this).val() == '' ){
