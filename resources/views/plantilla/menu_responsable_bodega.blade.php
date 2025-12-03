@@ -84,6 +84,20 @@
       <li class="item-menu">
          <ul class="collapsible expandable">
             <li>
+               <div class="menu-header collapsible-header" style="margin-bottom:10px;"><i class="fas fa-binoculars"></i> NUC LOCALIZACION</div>
+               <div class="menu-body collapsible-body">
+               <a href="/localizacion"><i class="fas fa-file-alt"></i><span>nuc-añadir-localizacion</span></a>
+               </div>
+               <div class="menu-body collapsible-body">
+               <a href="/asignar-localizacion"><i class="fas fa-file-alt"></i><span>nuc-asignar-localizacion</span></a>
+               </div>
+            </li>
+         </ul>
+      </li>
+      <hr class="hr-4">
+      <li class="item-menu">
+         <ul class="collapsible expandable">
+            <li>
                <div class="menu-header collapsible-header" style="margin-bottom:10px;"><i class="fas fa-chart-pie"></i> ESTADÍSTICA</div>
                <div class="menu-body collapsible-body">
                <a href="/indicio-inventario"><i class="fas fa-chart-line"></i><span>Inventario General</span></a>

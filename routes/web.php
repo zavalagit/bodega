@@ -1203,3 +1203,5 @@ Route::get('arma-consultar','Arma\ArmaController@arma_consultar')->name('arma_co
 
 
    //***************************************LOCALIZACION DE NUC******************************************************
+   Route::get('localizacion','LocalizacionController@localizacion_nuc');
+   Route::get('asignar-localizacion','LocalizacionController@asignar_localizacion');
